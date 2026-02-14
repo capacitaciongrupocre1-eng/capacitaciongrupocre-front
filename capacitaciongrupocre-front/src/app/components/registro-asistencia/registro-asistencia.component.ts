@@ -21,8 +21,8 @@ export class RegistroAsistenciaComponent implements OnInit {
       this.asistenciaService.registrar(this.nombre).subscribe({
         next: (res) => {
           alert('Asistencia registrada con éxito');
-          this.nombre = ''; // Limpiar input
-          this.cargarRegistros(); // Refrescar tabla
+          this.nombre = ''; 
+          this.cargarRegistros(); 
         },
         error: (err) => {
           console.error('Error al registrar', err);
